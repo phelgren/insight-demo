@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'insight-demo';
+
+  title = 'Midrange RoundUP';
+  navbarOpen = false;
+  
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  
 }
