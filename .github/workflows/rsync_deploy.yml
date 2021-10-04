@@ -12,7 +12,7 @@ jobs:
     - name: rsync deployments
       uses: burnett01/rsync-deployments@5.1
       with:
-        switches: -avzr --delete
+        switches: -avzr --rsync-path=/QOpenSys/pkgs/bin/rsync
         path: dist/
         remote_path: /www/petes/htdocs/petesworkshop/
         remote_host: petesworkshop.com
